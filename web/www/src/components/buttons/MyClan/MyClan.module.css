@@ -1,0 +1,11 @@
+.button {
+  width: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttonContainer {
+  z-index: 0;
+}

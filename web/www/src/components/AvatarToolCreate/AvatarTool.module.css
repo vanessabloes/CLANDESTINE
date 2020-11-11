@@ -1,0 +1,106 @@
+.overlay {
+    composes: overlay from "../../styles/Avatar.module.css";
+    display: flex;
+    flex-direction: column;
+}
+
+.closeButton {
+    composes: closeButton from "../../styles/Avatar.module.css";
+}
+
+.maskContainer {
+    composes: maskContainer from "../../styles/Avatar.module.css";
+}
+
+.maskTop {
+    composes: maskTop from "../../styles/Avatar.module.css";
+}
+
+.maskMiddle {
+    composes: maskMiddle from "../../styles/Avatar.module.css";
+}
+
+.maskBottom {
+    composes: maskBottom from "../../styles/Avatar.module.css";
+}
+
+.avatarImageWrapper{
+    composes: avatarImageWrapper from "../../styles/Avatar.module.css";
+}
+
+.buttonWrapper{
+    composes: buttonWrapper from "../../styles/Avatar.module.css";
+}
+
+.buttonLeft {
+    composes: buttonLeft from "../../styles/Avatar.module.css";
+}
+
+.form {
+    composes: form from "../../styles/Avatar.module.css";  
+}
+
+.labelWrapper {
+    composes: labelWrapper from "../../styles/Avatar.module.css"; 
+}
+
+.spanNickname {
+    composes: span from "../../styles/Avatar.module.css";
+    width: 7.5rem;
+    padding-left: .5rem;
+}
+
+.spanAge {
+    composes: span from "../../styles/Avatar.module.css";
+    width: 3.5rem;
+    padding-left: .5rem;
+}
+
+.input {
+    composes: input from "../../styles/Avatar.module.css";
+}
+
+.inputElements {
+    composes: inputElements from "../../styles/Avatar.module.css";
+}
+
+.hidden {
+    composes: visually-hidden from "../../styles/index.css"
+}
+
+.button {
+    composes: buttonSubmitm from "../../styles/Avatar.module.css";
+    composes: button from "../../styles/uiControls.module.css";
+    background-color: rgba(255, 0, 0, 0);;
+    background-image: url("/assets/img/BUTTONS/btnTheePot.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10rem;
+    height: 10rem;
+}
+
+.theepot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .theepot p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: Helvetica Neue;
+    margin-top: -3rem;
+  }
+
+  .close{
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+  }
+
+  .errorLabel {
+      color: #E30613;
+      font-weight: bold;
+  }

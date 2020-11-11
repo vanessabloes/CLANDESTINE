@@ -1,0 +1,5 @@
+# htaccess in case this www folder is uploaded to a public folder (e.g. combell)
+# rewrites all http requests to the html subfolder
+
+RewriteEngine On
+RewriteRule ^(.*)$ /html/$1 [L]

@@ -1,0 +1,20 @@
+
+@value tokens: "../../../styles/tokens.module.css";
+@value title-font, background-color  from tokens;
+
+.button_title {
+    composes: button_title from "../../../styles/typo.module.css";
+    
+}
+.buttonContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background-color: background-color;
+}

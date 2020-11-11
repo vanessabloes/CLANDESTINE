@@ -1,0 +1,63 @@
+.loadingWrapper {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  margin: auto 0;
+  height: 100vh;
+}
+
+.hidden {
+  composes: visually-hidden from "../../styles/index.css"
+}
+
+.koepel {
+  z-index: 1;
+  margin: auto;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+
+.deur {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  place-self: end center;
+  margin-bottom: 4rem;
+}
+
+.leftDoor {
+  position: relative;
+  animation: deurL 5s infinite;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 3;
+  margin-left: 1.4rem;
+}
+
+.rightDoor {
+  position: relative;
+  animation: deurR 5s infinite;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 3;
+  justify-self: flex-end;
+  margin-right: 1.4rem;
+}
+
+.LoadingWheel {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@keyframes deurL {
+  from {right: 0px;}
+  to {right: 80px;}
+}
+
+
+@keyframes deurR {
+  from {left: 0px;}
+  to {left: 80px;}
+}
+

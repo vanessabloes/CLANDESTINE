@@ -1,0 +1,75 @@
+@value tokens: "../../styles/tokens.module.css";
+@value title-font from tokens;
+
+.wheelPowerWrapper {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.circle__wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+
+    display: grid;
+    justify-content: center;
+    background-image: url("/assets/img/GAME/circle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    width: 30rem;
+}
+
+.recognitionCircle {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+}
+
+.arrow {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+    margin-top: -37rem;
+    z-index: 1;
+}
+
+.wayfarersList {
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+.wayfarersListItem {
+    position: absolute;
+    z-index: 0;
+}
+
+
+.wordSvg{
+    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
+    place-self: center;
+    background-color: lightcoral;
+
+}
+
+.word {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.button {
+    composes: button from "../../styles/uiControls.module.css";
+
+
+}

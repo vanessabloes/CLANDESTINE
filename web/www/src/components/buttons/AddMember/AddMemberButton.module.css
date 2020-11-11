@@ -1,0 +1,19 @@
+.buttonContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  z-index: 1;
+}
+
+.addMemberButton {
+  z-index: 2;
+  composes: button from "../../../styles/uiControls.module.css";
+
+}
+
+.button_title {
+  composes: button_title from "../../../styles/typo.module.css";
+}

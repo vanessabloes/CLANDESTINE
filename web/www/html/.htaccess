@@ -1,0 +1,14 @@
+Options +Indexes
+RewriteEngine On
+
+# check if the file exists in the build directory
+RewriteCond %{DOCUMENT_ROOT}/build/$1 -f
+RewriteRule ^(.*)$ /build/$1 [L]
+
+# document root might be different - check one directory up as well
+RewriteCond %{DOCUMENT_ROOT}/html/build/$1 -f
+RewriteRule ^(.*)$ /html/build/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php

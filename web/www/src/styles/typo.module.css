@@ -1,0 +1,50 @@
+@value tokens: "./tokens.module.css";
+@value font-base, title-font, bodyCopy-font from tokens;
+
+/* composes: page_title from "../../styles/typo.module.css"; */
+
+.page_title { /*figma -> ui/page title*/
+  font-family: title-font;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.subtext { /*figma -> ui/subtext (tekst onder een titel), zin in page title component*/
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.subtitle { /*figma -> ui/ondertitel*/
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle_bold {
+  font-family: title-font;
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.bodyCopy { /*figma -> ui/broodtekst*/
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.bodycopy_italic {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.button_title {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}

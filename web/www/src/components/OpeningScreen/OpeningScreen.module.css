@@ -1,0 +1,76 @@
+@value tokens: "../../styles/tokens.module.css";
+@value title-font from tokens;
+
+
+.opening_screen_wrapper {
+  composes: opening_screen_wrapper from "../../styles/launch.module.css";
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title_wrapper {
+  place-self: center;
+  margin: 5rem auto;
+}
+
+.title {
+  font-family: title-font;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.subtitle {
+    composes: subtitle from "../../styles/typo.module.css";
+}
+
+.image_mask {
+  place-self: center;
+  height: 80rem;
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 1;
+  animation: float 4s infinite;
+}
+
+.image_wolkOne {
+  place-self: end;
+  grid-row: 2;
+  grid-column: 1;
+  height: 4.5rem;
+  padding-right: 10rem;
+  z-index: 0;
+  animation: float 8s infinite;
+}
+
+
+
+.image_wolkTwo {
+  place-self: start;
+  grid-row: 2;
+  grid-column: 1;
+  height: 5rem;
+  padding-left: 5rem;
+  z-index: 0;
+  animation: float 8s infinite;
+}
+
+.button {
+  place-self: center;
+  grid-row: 3;
+  grid-column: 1;
+  margin-top: -2rem;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

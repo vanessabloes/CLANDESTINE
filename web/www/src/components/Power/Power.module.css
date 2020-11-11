@@ -1,0 +1,21 @@
+@value tokens: "../../styles/tokens.module.css";
+@value font-base,  title-font from tokens;
+
+.power {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    composes: button from "../../styles/uiControls.module.css";
+    background-color: rgba(red, green, blue, 0);
+  }
+
+.powerWayfarer {
+    font-family: title-font;
+    font-size: 2.8rem;
+}
+
+.powerRole {
+    font-size: 1.6rem;
+    font-weight: bold;
+}

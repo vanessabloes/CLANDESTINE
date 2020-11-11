@@ -1,0 +1,67 @@
+@value tokens: "../../styles/tokens.module.css";
+@value title-font, background-color from tokens;
+
+.RecognitionCircle {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle__counter {
+    composes: page_title from "../../styles/typo.module.css"
+}
+
+.wave {
+    width: 16rem;
+    height: 2rem;
+    overflow: hidden; 
+}
+
+.wave:before {
+    content: "loaderloader";
+    position: relative;
+    top: -3.5rem;
+    width: calc(100% + 2.7rem);
+    font-size: 4rem;
+    color: background-color;
+    text-decoration-style: wavy;
+    text-decoration-color: #1B1A1A;
+    text-decoration-line: underline;
+    animation: animate .5s linear infinite;
+}
+
+.line {
+    width: 17rem;
+    height: 2rem;
+    border-top: 0.4rem solid #1B1A1A;
+}
+
+.toggle__btn {
+    border: none;
+    background-color: background-color;
+    width: 6rem;
+    height: 6rem;
+}
+
+.word {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.toggle__icon {
+    width: 6rem;
+    height: 6rem;
+    top: -5rem;
+}
+
+@keyframes animate {
+    0%{
+        right: 0;
+    }
+
+    100%{
+        right: 2rem;
+    }
+}
